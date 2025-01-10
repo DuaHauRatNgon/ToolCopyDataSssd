@@ -7,7 +7,7 @@
 - tạo .deb và install bằng dpkg
 
 2. update sau
--tốc độ cp chậm nếu file lớn do dùng shutil.copy
+-tốc độ copy chậm nếu file lớn do dùng shutil.copy
 -file lớn -> xảy ra lỗi (mất kết nối, file bị khóa), chương trình cần có cơ chế tiếp tục thay vì dừng hẳn
 -> sẽ dùng os.system với rsync để cải thiện -> combie python vs script linux
 -> song song/ đa luồng -> thư viện như concurrent.futures hoặc multiprocessing để sao chép nhiều file đồng thời
