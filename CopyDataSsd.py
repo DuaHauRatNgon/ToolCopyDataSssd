@@ -18,6 +18,9 @@
 
 # Các chức năng khác: đang cố gắng cải tiến thêm...
 
+# Chu y: tool nay copy tuan tu, tuc ssd internal da thui du lieu xong va can backup/copy sang ssd external
+# Trong truong hop muon copy data sang ssd external trong khi ssd internal van dang recording, vui long su dung tool khac !
+
 
 import os
 import shutil

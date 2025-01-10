@@ -9,8 +9,10 @@ Tạo virtual environment để install các lib mà không làm ảnh hưởng 
 python3 -m venv venv
 source venv/bin/activate
 
-Cài đặt các lib cần thiết từ file requirements.txt:
-pip install -r requirements.txt
+PyQt5 cần một số công cụ xây dựng như qtbase5-dev, qt5-qmake, và build-essential :
+sudo apt install python3-dev qtbase5-dev qt5-qmake build-essential -y
+pip install PyQt5
+
 
 chạy chương trình:
 python ten_ch_trinh.py
