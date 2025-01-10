@@ -1,6 +1,3 @@
-Giaỉ nén ra được 4 file sau:
-CopyDataSsd.py  Note.txt  README.txt  requirements.txt
-
 Cài đặt Python nếu chưa có:
 sudo apt update
 sudo apt install python3 python3-pip
@@ -9,8 +6,26 @@ Tạo virtual environment để install các lib mà không làm ảnh hưởng 
 python3 -m venv venv
 source venv/bin/activate
 
-Cài đặt các lib cần thiết từ file requirements.txt:
-pip install -r requirements.txt
+PyQt5 cần một số công cụ xây dựng như qtbase5-dev, qt5-qmake, và build-essential :
+sudo apt install python3-dev qtbase5-dev qt5-qmake build-essential -y
+
+(neu k the cai dat qt5 hay upgrade pip): python -m pip install --upgrade pip
+
+sau do cai dat:
+pip install PyQt5
+
+(Xem cac thu vien can cai dat nhu sau)
+pip list
+-> ket qua hien ra
+Package       Version
+------------- -------
+pip           24.3.1
+pkg_resources 0.0.0
+PyQt5         5.15.11
+PyQt5-Qt5     5.15.16
+PyQt5_sip     12.15.0
+setuptools    44.0.0
+
 
 chạy chương trình:
 python ten_ch_trinh.py
