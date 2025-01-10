@@ -1,0 +1,14 @@
+Đây là ghi chú riêng của dev, user k cần đọc !
+
+1. share 
+- tạo exe dành cho windows
+- nén folder thành zip (đang dùng)
+- docker (cho os khác)
+- tạo .deb và install bằng dpkg
+
+2. update sau
+-tốc độ cp chậm nếu file lớn do dùng shutil.copy
+-file lớn -> xảy ra lỗi (mất kết nối, file bị khóa), chương trình cần có cơ chế tiếp tục thay vì dừng hẳn
+-> sẽ dùng os.system với rsync để cải thiện -> combie python vs script linux
+-> song song/ đa luồng -> thư viện như concurrent.futures hoặc multiprocessing để sao chép nhiều file đồng thời
+-> thi thoảng check xem ch trình có bị interrupt hay không
