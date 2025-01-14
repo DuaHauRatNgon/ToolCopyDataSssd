@@ -14,6 +14,9 @@ sudo apt install python3-dev qtbase5-dev qt5-qmake build-essential -y
 sau do cai dat:
 pip install PyQt5
 
+(PyQt5 phù hợp với Python 3.6.9 trên Ubuntu 18.04) :
+pip install PyQt5==5.15.4
+
 (Xem cac thu vien can cai dat nhu sau)
 pip list
 -> ket qua hien ra

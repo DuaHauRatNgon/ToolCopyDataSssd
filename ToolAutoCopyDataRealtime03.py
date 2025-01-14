@@ -160,7 +160,11 @@ class CopyApp(QMainWindow):
                 dest_folder        
             ]
 
-            process = subprocess.Popen(rsync_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            #tham số text=True chỉ hợp lệ trên Python >=3.7
+            # process = subprocess.Popen(rsync_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+            # treen autera dung:
+            process = subprocess.Popen(rsync_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
             for line in process.stdout:
                 self.log(line.strip())
